@@ -19,8 +19,8 @@ form.addEventListener('submit', (event) => {
   event.preventDefault();
 
   let montoValue = Number(monto.value);
-  // cambio = montoValue * 110.15;
-  cambio = montoValue * dolarDia();
+  cambio = montoValue * 111.37;
+  // cambio = montoValue * dolarDia();
 
   let ncambio = Number(cambio).toFixed(2);
   document.getElementById('cambio').innerHTML = ncambio;
