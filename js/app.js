@@ -7,7 +7,7 @@ let total = document.getElementById('total');
 let dolarDia = document.getElementById('dolar-dia');
 
 const dolarOficial = () => {
-  fetch('http://localhost:3000/dolar', {
+  fetch('/dolar', {
     method: 'GET',
     headers: {
       'Content-Type': 'application/json',
