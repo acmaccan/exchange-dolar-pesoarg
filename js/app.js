@@ -7,7 +7,7 @@ let total = document.getElementById('total');
 let dolarDia = document.getElementById('dolar-dia');
 
 const dolarOficial = () => {
-  fetch('/dolar', {
+  fetch('https://dolar-peso-arg.herokuapp.com/dolar', {
     method: 'GET',
     headers: {
       'Content-Type': 'application/json',
