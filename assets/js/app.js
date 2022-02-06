@@ -4,15 +4,15 @@ let cambio = document.getElementById('cambio');
 let pais = document.getElementById('pais');
 let ganancias = document.getElementById('ganancias');
 let total = document.getElementById('total');
+let dataPromise;
 
 const dolarDia = async () => {
   const response = await axios.get(
     'https://api-dolar-argentina.herokuapp.com/api/dolaroficial'
   );
 
-  // dataPromise = response.then((response) => response.data.venta);
-  // console.log(dataPromise);
-  return response.data.venta;
+  dataPromise = response.then((response) => response.data.venta);
+  return dataPromise;
 };
 
 form.addEventListener('submit', (event) => {
