@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "Calculadora dólar oficial a pesos argentinos, impuesto PAIS y retención ganancias",
   "scripts": {
-    "start": "nodemon ./js/server.js"
+    "start": "node ./js/server.js"
   },
   "author": "Andrea Maccan",
   "license": "ISC",
