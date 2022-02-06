@@ -10,9 +10,8 @@
       integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
       crossorigin="anonymous"
     />
-    <link href="./assets/css/styles.css" rel="stylesheet" />
-    <script src="https://unpkg.com/axios/dist/axios.min.js" defer></script>
-    <script type="text/javascript" src="./assets/js/app.js" defer></script>
+    <link href="./css/styles.css" rel="stylesheet" />
+    <script type="text/javascript" src="./js/app.js" defer></script>
 
     <title>Calculadora dólar oficial a pesos argentinos</title>
   </head>
@@ -23,6 +22,7 @@
       <h2>(impuesto PAIS + retención ganancias)</h2>
 
       <div class="container w-75 calculator">
+        <div>Dolar oficial del día: <p id="dolar-dia"></p></div>
         <form id="form">
           <label class="w-100 text-start" for="dolares">Monto en dólares:</label
           ><br />
