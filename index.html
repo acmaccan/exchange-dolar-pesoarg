@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+      crossorigin="anonymous"
+    />
+    <link href="./assets/css/styles.css" rel="stylesheet" />
+    <script src="https://unpkg.com/axios/dist/axios.min.js" defer></script>
+    <script type="text/javascript" src="./assets/js/app.js" defer></script>
+
+    <title>Calculadora dólar oficial a pesos argentinos</title>
+  </head>
+
+  <body>
+    <div class="container">
+      <h1>Calculadora dólar oficial a pesos argentinos</h1>
+      <h2>(impuesto PAIS + retención ganancias)</h2>
+
+      <div class="container w-75 calculator">
+        <form id="form">
+          <label class="w-100 text-start" for="dolares">Monto en dólares:</label
+          ><br />
+          <input class="w-100" type="number" id="monto" /><br />
+          <button class="w-100 btn shadow-none" type="submit">Calcular</button>
+        </form>
+
+        <table class="table">
+          <tbody>
+            <tr>
+              <td>Cambio dólar oficial:</td>
+              <td id="cambio"></td>
+            </tr>
+            <tr>
+              <td>30 % - Impuesto PAIS:</td>
+              <td id="pais"></td>
+            </tr>
+            <tr>
+              <td>35% - Retención Ganancias:</td>
+              <td id="ganancias"></td>
+            </tr>
+            <tr>
+              <td>Total final en pesos:</td>
+              <td id="total"></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </body>
+</html>
